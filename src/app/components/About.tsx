@@ -35,6 +35,7 @@ const focusAreas = [
 
 const About = () => {
   return (
+
 <section
   id="about"
   aria-labelledby="about-heading"
