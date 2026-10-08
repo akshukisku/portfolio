@@ -8,24 +8,9 @@ import {
 
 import { siteConfig } from "@/config/site";
 import { projects } from "../services/json/project.data";
+import { Project } from "@/types/project";
 
-type Project = {
-  id: number;
-  name: string;
-  category: string;
-  description: string;
-  role: string;
-  technologies: string[];
-  features: string[];
-  language: string;
-  topics: string[];
-  featured: boolean;
-  githubUrl: string;
-  liveUrl: string;
-  stars: number;
-  forks: number;
-  updatedAt: string;
-};
+
 
 type ProjectCardProps = {
   project: Project;
@@ -227,9 +212,6 @@ const ProjectCard = ({
         >
           <span>{project.role}</span>
 
-          {project.updatedAt && (
-            <span>{project.updatedAt}</span>
-          )}
         </div>
 
         {/* =========================================
