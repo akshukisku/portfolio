@@ -108,9 +108,7 @@ const Navbar = () => {
               sm:px-3
             "
           >
-            {siteConfig.name === "[Your Name]"
-              ? "DEV."
-              : siteConfig.name}
+            {siteConfig.name}
           </a>
 
           {/* Desktop Navigation */}
